@@ -10,9 +10,9 @@ func reverse(x int) int {
 	for x != 0 {
 		result = (x % 10) + (result * 10)
 		x = x / 10
-	}
-	if result > maxValue || result < minValue {
-		return 0
+		if result > maxValue || result < minValue {
+			return 0
+		}
 	}
 	return result
 }
