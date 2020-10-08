@@ -1,6 +1,10 @@
 package easy100
 
-func isSym(node1, node2 *TreeNode) bool {
+import (
+	"github.com/ray1888/leetcode-interview/datastructure"
+)
+
+func isSym(node1, node2 *datastructure.TreeNode) bool {
 	if node1 == nil && node2 == nil {
 		return true
 	} else if node1 == nil && node2 != nil {
@@ -20,7 +24,7 @@ func isSym(node1, node2 *TreeNode) bool {
 	return true
 }
 
-func isSymmetric(root *TreeNode) bool {
+func isSymmetric(root *datastructure.TreeNode) bool {
 	if root == nil {
 		return true
 	}
