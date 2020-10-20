@@ -1,10 +1,12 @@
 package medium100
 
-func removeNthFromEnd(head *ListNode, n int) *ListNode {
+import "github.com/ray1888/leetcode-interview/datastructure"
+
+func removeNthFromEnd(head *datastructure.ListNode, n int) *datastructure.ListNode {
 	if head == nil {
 		return nil
 	}
-	dummy := new(ListNode)
+	dummy := new(datastructure.ListNode)
 	dummy.Next = head
 	fast := dummy
 	slow := dummy
