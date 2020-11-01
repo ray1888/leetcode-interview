@@ -11,7 +11,7 @@ func solveQueen2(row int, n int, result *int, visited [][]bool) {
 			visited[0][col] = true
 			visited[1][row-col+n] = true
 			visited[2][row+col] = true
-			solve(row+1, n, result, visited)
+			solveQueen2(row+1, n, result, visited)
 			visited[0][col] = false
 			visited[1][row-col+n] = false
 			visited[2][row+col] = false
