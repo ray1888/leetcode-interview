@@ -1,6 +1,8 @@
 package easy100
 
-func rangeSumBST(root *TreeNode, L int, R int) int {
+import "github.com/ray1888/leetcode-interview/datastructure"
+
+func rangeSumBST(root *datastructure.TreeNode, L int, R int) int {
 	if root == nil {
 		return 0
 	}
